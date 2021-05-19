@@ -9,7 +9,10 @@
     <title>Gallery</title>
 
 <style>
-    
+    .image_thumbnail{
+        height:200px;
+        object-fit: cover;
+    }
 </style>
 
 </head>
@@ -41,8 +44,18 @@
                         <div class="card-body">
                             <small>Category: Pets</small>
                         </div>
-                        <a href="" class="btn btn-outline-dark btn-sm m-1">View</a>
+                        <a href="{% url 'photo' 5 %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                     </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card my-2" >
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSP6vyy3X9xdOxDr3mTCauFZzr9DzFzHFJ6Ww&usqp=CAU" alt="" class="image-thumbnail">
+                        <div class="card-body">
+                            <small>Category: Pets</small>
+                        </div>
+                        <a href="{% url 'photo' 5 %}" class="btn btn-outline-dark btn-sm m-1">View</a>
+                        </div>
                     </div>
 
                     <div class="col-md-4">
@@ -51,17 +64,7 @@
                         <div class="card-body">
                             <small>Category: Pets</small>
                         </div>
-                        <a href="" class="btn btn-outline-dark btn-sm m-1">View</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="card my-2" >
-                        <img src="https://www.wordonfire.org/wp-content/media/blogstt9.jpg" alt="" class="image-thumbnail">
-                        <div class="card-body">
-                            <small>Category: Pets</small>
-                        </div>
-                        <a href="" class="btn btn-outline-dark btn-sm m-1">View</a>
+                        <a href="{% url 'photo' 5 %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                     </div>
                     </div>
 
