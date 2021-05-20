@@ -19,8 +19,8 @@
             <div class="col">
                 <a class="btn btn-dark my-3" href="{% url 'gallery' %}">Back</a>
                 <div style="height: 90vh;">
-                    <img style="max-width:100%; max-height:100%;" src="https://www.wordonfire.org/wp-content/media/blogstt9.jpg" alt="">
-                    <p>A picture of the holy Saint Therese of Liseaux</p>
+                    <img style="max-width:100%; max-height:100%;" src="{{photo.image.url}}" alt="">
+                    <p>{{photo.description}}</p>
                 </div>
             </div>
         </div>
